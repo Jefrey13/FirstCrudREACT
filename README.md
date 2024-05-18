@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Detalles de la Aplicación CRUD Temporal en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
+Esta aplicación CRUD (Create, Read, Update, Delete) en React es una herramienta simple para gestionar datos de ejemplo. Permite al usuario agregar, ver, editar y eliminar elementos de una lista de datos ficticia. La aplicación consta de tres componentes principales: `CrudForm`, `CrudTable`, y `CrudApp`.
 
-## Available Scripts
+## Componentes
 
-In the project directory, you can run:
+### 1. CrudForm
+El componente `CrudForm` se encarga de mostrar un formulario para agregar nuevos elementos o editar los existentes. Utiliza el estado local para gestionar los datos del formulario y se comunica con el componente principal (`CrudApp`) a través de las funciones de creación y actualización.
 
-### `npm start`
+### 2. CrudTable
+El componente `CrudTable` muestra los datos en una tabla y proporciona botones para editar o eliminar cada fila. Recibe los datos como una lista y utiliza un bucle para generar las filas de la tabla. Se comunica con el componente principal (`CrudApp`) para manejar las acciones de edición y eliminación.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. CrudApp
+El componente `CrudApp` es el componente principal de la aplicación. Gestiona el estado de los datos y las funciones para crear, actualizar y eliminar elementos. También se encarga de pasar las funciones y datos necesarios a los componentes `CrudForm` y `CrudTable`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+- **Agregar Datos:** Permite al usuario agregar nuevos elementos a la lista proporcionando un nombre y una constelación.
+- **Editar Datos:** Permite al usuario editar los elementos existentes haciendo clic en el botón "Editar" en la tabla.
+- **Eliminar Datos:** Permite al usuario eliminar elementos haciendo clic en el botón "Eliminar" en la tabla.
+- **Validación de Datos:** Verifica que los campos de nombre y constelación no estén vacíos antes de agregar o editar un elemento.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tecnologías Utilizadas
+- React: Biblioteca de JavaScript para construir interfaces de usuario.
+- JSX: Extensión de sintaxis de JavaScript utilizada en React para escribir componentes.
+- useState: Hook de React utilizado para gestionar el estado local en los componentes de función.
+- useEffect: Hook de React utilizado para realizar efectos secundarios en componentes funcionales.
+- Props: Mecanismo utilizado en React para pasar datos de un componente a otros
